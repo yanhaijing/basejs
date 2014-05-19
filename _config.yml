@@ -1,0 +1,15 @@
+name: JavaScript简易教程
+markdown: kramdown
+pygments: false
+
+production_url: http://yanhaijing.com
+
+keywords: [javascript, JavaScript教程, JavaScript简易教程, JavaScript基础教程, JavaScript入门教程, yanhaijing, 颜海镜, 颜海镜的博客]
+description: 这是我所知道的最完整最简洁的JavaScript基础教程。这篇文章带你尽快走进JavaScript的世界——前提是你有一些编程经验的话。本文试图描述这门语言的最小子集。我给这个子集起名叫做“JavaScript简易教程”。
+
+author :
+  name : 颜海镜
+  email : yanhaijing@yeah.net
+  github : https://github.com/yanhaijing
+  weibo : http://weibo.com/yanhaijing1234
+  blog: http://yanhaijing

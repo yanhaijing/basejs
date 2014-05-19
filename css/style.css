@@ -1,0 +1,41 @@
+.doc-container {
+	margin-top: 80px;
+}
+.doc-nav-wrap {
+
+}
+.doc-nav {
+	width: 263px;
+	overflow-y: scroll;
+	height: 600px;
+	text-shadow: 0 1px 0 #fff;
+	background-color: #f7f5fa;
+	border-radius: 5px;
+}
+.doc-nav .active > a {
+	font-weight: bold;
+	color: #563d7c;
+	background-color: transparent;
+	border-right: 1px solid #563d7c;
+}
+h2[id] {
+	padding-top: 80px;
+	margin-top: -45px;
+}
+h3[id] {
+	padding-top: 80px;
+	margin-top: -60px;
+}
+
+.yan-copyright{
+	padding: 15px;
+	background-color: #FFF7DC;
+	border: 2px solid #FFBFBF;
+	font:14px 微软雅黑;
+}
+.donate{
+	margin-bottom:20px;
+}
+.donate figcaption{
+	text-indent: 45px;
+}

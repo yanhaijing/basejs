@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+	    <meta name="keywords" content="{{ site.keywords | join:','}}" />	    
+	    <meta name="description" content="{{ site.description }}" />  
+	    <meta name="author" content="{{ site.author.name }}">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>{{ page.title }}</title>
+		<meta name="viewport" content="width=device-width">
+				
+		<!-- syntax highlighting CSS
+		<link rel="stylesheet" href="/css/syntax.css">
+
+		<!-- Custom CSS
+		<link rel="stylesheet" href="/css/main.css"> -->
+
+		<!-- link bootstrap -->
+		<link rel="stylesheet" href="plugin/bs/css/bootstrap.min.css">
+		
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+		  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+		
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- Docs master nav -->
+		<header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="../" class="navbar-brand">JavaScript简易教程</a>
+				</div>
+				<nav class="collapse navbar-collapse" role="navigation">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="http://yanhaijing.com" target="_blank">我的博客</a>
+						</li>
+						<li>
+							<a href="http://yanhaijing.com/es5" target="_blank">ES5合集</a>
+						</li>
+						<li>
+							<a href="http://yanhaijing.com/myProject" target="_blank">开源项目</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#sect_other">关于</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="container doc-container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="doc-nav-wrap">
+						<ul class="nav doc-nav js-doc-nav">
+							<li class="active">
+								<a href="#sect_conventions">本文约定</a>								
+							</li>
+							<li>
+								<a href="#sect_nature">语言的性质</a>								
+							</li>
+							<li>
+								<a href="#sect_syntax">语法</a>
+							</li>
+							<li>
+								<a href="#sect_variables_assignment">变量和赋值</a>
+							</li>
+							<li>
+								<a href="#sect_values">值</a>
+							</li>
+							<li>
+								<a href="#sect_booleans">布尔</a>								
+							</li>
+							<li>
+								<a href="#sect_numbers">数字</a>
+							</li>
+							<li>
+								<a href="#sect_strings">字符串</a>
+							</li>
+							<li>
+								<a href="#sect_statements">语句</a>
+							</li>
+							<li>
+								<a href="#sect_functions">函数</a>
+							</li>
+							<li>
+								<a href="#sect_exceptions">异常处理</a>
+							</li>
+							<li>
+								<a href="#sect_strict_mode">严格模式</a>
+							</li>
+							<li>
+								<a href="#sect_var_scope_closures">变量作用域和闭包</a>
+							</li>
+							<li>
+								<a href="#sect_objects">对象和继承</a>
+							</li>
+							<li>
+								<a href="#sect_arrays">数组</a>
+							</li>
+							<li>
+								<a href="#sect_regexp">正则表达式</a>
+							</li>
+							<li>
+								<a href="#sect_math">数学</a>
+							</li>
+							<li>
+								<a href="#sect_standard_library">标准库的其他功能</a>
+							</li>
+							<li>
+								<a href="#sect_learn_next">下一步学什么？</a>
+							</li>
+							<li>
+								<a href="#sect_comment">欢迎反馈</a>
+							</li>
+							<li>
+								<a href="#sect_other">其他</a>
+							</li>
+						</ul>
+					</div><!-- .nav-wrap -->					
+				</div><!-- .col-md-3 -->
+				<div  class="col-md-9 cont" role="main">
+					{{ content }}					
+					{% include alipay %}
+					{% include duoshuo %}
+				</div><!-- .cont -->				
+			</div><!-- .row -->
+			<footer class="row" role="contentinfo">
+				<p>&copy; {{ site.time | date: '%Y' }} <a href="http://yanhaijing.com" target="_blank">{{ site.author.name }}</a>		          		          
+		          <a class="github" href="https://github.com/yanhaijing/yanhaijing.github.com" target="_blank" title="Fork me on GitHub"> <img width="20" height="20" align="Fork me on GitHub" src="img/auth-github.png" /></a>
+		          <a class="weibo" href="http://weibo.com/yanhaijing1234/profile" target="_blank" title="weibo"> <img width="20" height="20" align="weibo" src="img/auth-weibo.png" /></a>		                                      		          
+		        </p>
+			</footer>
+		</div><!-- .doc-container -->
+		<script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+		<script src="plugin/bs/js/bootstrap.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/baidu.js"></script>
+		{% include share %}				
+	</body>
+</html>

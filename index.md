@@ -1453,6 +1453,12 @@ JavaScript标准库相对简单，但有很多其他东西你可以使用：
 
 我尝试找到JavaScript的一个最理想子集。我成功了吗？需要增删一些东西吗？如果你是一个JavaScript新手，我特别想听听你的意见：当读这篇文章的时候是非常容易理解吗？或是你在某些地方卡住？
 
+### 一起交流吧
+
+- GitHub家园 225932282，Git/GitHub爱好者的天堂，欢迎有兴趣的同学加入 <a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="github 家园" title="github 家园"></a>
+- 码农之家 203145707，码农们的天堂，欢迎有兴趣的同学加入 <a target="_blank" href="http://url.cn/RyKWB0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="码农之家" title="码农之家"></a>
+- CSS家园 188275051，Web开发者（前后端）的天堂，欢迎有兴趣的同学加入<a target="_blank" href="http://url.cn/OXkoEC"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
+
 <h2 id="sect_other">其他</h2>
 
 ### 关于

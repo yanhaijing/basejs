@@ -9,6 +9,28 @@ title: JavaScript简易教程
 
 **警告：**下面是我所描述的规则集和最佳实践。我喜欢整洁清晰（例如，你可以随时通过下面的目录快速导航）。规则是无懈可击的，但不可避免——每个人的理解不同。
 
+##目录
+
+1.	[本文约定](#sect_conventions)
+2.	[语言的性质](#sect_nature)
+3.	[语法](#sect_syntax)
+4.	[变量和赋值](#sect_variables_assignment)
+5.	[值](#sect_values)
+6.	[布尔](#sect_booleans)
+7.	[数字](#sect_numbers)
+8.	[字符串](#sect_strings)
+9.	[语句](#sect_statements)
+10.	[函数](#sect_functions)
+11.	[异常处理](#sect_exceptions)
+12.	[严格模式](#sect_strict_mode)
+13.	[变量作用域和闭包](#sect_var_scope_closures)
+14.	[对象和继承](#sect_objects)
+15.	[数组](#sect_arrays)
+16.	[正则表达式](#sect_regexp)
+17.	[数学](#sect_math)
+18.	[标准库的其他功能](#sect_standard_library)
+19.	[下一步学什么？](#sect_learn_next)
+
 <h2 id="sect_conventions">本文约定（Conventions used in this blog post）</h2>
 
 ###命令行交互（Command line interaction）

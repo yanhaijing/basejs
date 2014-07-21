@@ -7,7 +7,7 @@
 .doc-nav {
 	width: 230px;
 	overflow-y: scroll;
-	height: 540px;
+	height: 500px;
 	text-shadow: 0 1px 0 #fff;
 	background-color: #f7f5fa;
 	border-radius: 5px;
@@ -31,7 +31,7 @@ h3[id] {
 	padding: 15px;
 	background-color: #FFF7DC;
 	border: 2px solid #FFBFBF;
-	font:14px 微软雅黑;
+	font:14px Microsoft Yahei,tahoma,sans-serif;
 }
 .donate{
 	margin-bottom:20px;

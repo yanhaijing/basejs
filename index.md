@@ -3,6 +3,8 @@ layout: default
 title: JavaScript简易教程
 ---
 
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=13&l=ez&f=ifr&f=ifr" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" border="0" frameborder="0" style="border:none;"></iframe>
+
 这是我所知道的最完整最简洁的JavaScript基础教程。
 
 这篇文章带你尽快走进JavaScript的世界——前提是你有一些编程经验的话。本文试图描述这门语言的最小子集。我给这个子集起名叫做“JavaScript简易教程”，并推荐准备深入阅读细节和高级技巧之前的新手阅读。心急吃不了热豆腐。文章的最后提出如何进一步学习。

@@ -1,15 +1,16 @@
 ---
 layout: default
 title: JavaScript简易教程
+version: 0.2.0
 ---
 
 <iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=13&l=ez&f=ifr&f=ifr" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" border="0" frameborder="0" style="border:none;"></iframe>
 
-这是我所知道的最完整最简洁的JavaScript基础教程。
+这是我所知道最完整最简洁的JavaScript基础教程。
 
-这篇文章带你尽快走进JavaScript的世界——前提是你有一些编程经验的话。本文试图描述这门语言的最小子集。我给这个子集起名叫做“JavaScript简易教程”，并推荐准备深入阅读细节和高级技巧之前的新手阅读。心急吃不了热豆腐。文章的最后提出如何进一步学习。
+本文将带你尽快走进JavaScript的世界——前提是你有一些编程经验的话。本文试图描述这门语言的最小子集。我给这个子集起名叫做“JavaScript简易教程”，并推荐那些准备深入阅读细节和高级技巧之前的新手阅读。合抱之木生于毫末，九层之台起于垒土，欲速则不达。本文的最后会提出如何进一步学习。
 
-**警告：**下面是我所描述的规则集和最佳实践。我喜欢整洁清晰（例如，你可以随时通过下面的目录快速导航）。规则是无懈可击的，但不可避免——每个人的理解不同。
+**警告：**下面是我所描述的规则集和最佳实践。我喜欢整洁清晰（例如，你可以随时通过下面的目录快速导航）。横看成岭侧成峰，远近高低各不同，虽然规则是无懈可击的，但不可避免——每个人的理解会各不相同。
 
 ##目录
 
@@ -42,34 +43,34 @@ title: JavaScript简易教程
 	> 3 + 4
 	  7
 
-大于号后面的文本是用户输入内容。其他的都是JavaScript引擎的输出内容。此外，也可以使用console.log()来向控制台打印数据（这方法可以在大部分JavaScript引擎中工作，包括Node.js）.
+大于号后面的文本是用户输入内容。其他的都是JavaScript引擎的输出内容。此外，也可以使用console.log()来向控制台打印数据（这种方法可以在大部分JavaScript引擎中工作，包括Node.js）.
 
 ###查找文档（Finding documentation）
 
-有时你看到一些函数或方法有超链接，你应该清楚他们的工作原理。如果没有，可以在[Mozilla Developer Network](https://developer.mozilla.org/en-US/) (MDN)上查看细节，你也可以使用Google在MDN上查找文档。例如，下面是通过Google搜索数组的push()方法的例子：
+有时你会看到一些函数或方法有超链接，你应该清楚他们的工作原理。如果没有，可以在[Mozilla Developer Network](https://developer.mozilla.org/en-US/) (MDN)上查看细节，你也可以使用Google在MDN上查找文档。例如，下面是通过Google搜索数组的push()方法的例子：
 
 [mdn array push](https://www.google.com/search?q=mdn+array+push)
 
 <h2 id="sect_nature">语言的性质（The nature of the language）</h2>
 
-本节对JavaScript的性质简要介绍，以帮助你理解一些疑问。
+本节对JavaScript的性质做简要介绍，以帮你理解一些疑问。
 
 ###JavaScript 和 ECMAScript（JavaScript versus ECMAScript）
 
-编程语言称为JavaScript，语言标准称为ECMAScript。他们有不同名字的原因是因为“Java”已经被注册为商标（属于Oracle）。目前，只有Mozilla被正式允许使用“JavaScript”名称，因为很久以前他们等到一份许可。因此，开放的语言标准拥有不同的名字。当前的JavaScript版本是ECMAScript 5，ECMAScript 6当前是[开发版](http://www.2ality.com/2012/11/guide-esnext.html)。
+编程语言称为JavaScript，语言标准被称为ECMAScript。他们有不同名字的原因是因为“Java”已经被注册为商标（属于Oracle）。目前，只有Mozilla被正式允许使用“JavaScript”名称，因为很久以前他们得到一份许可。因此，开放的语言标准拥有不同的名字。当前的JavaScript版本是ECMAScript 5，ECMAScript 6当前是[开发版](http://www.2ality.com/2012/11/guide-esnext.html)。
 
 ###影响（Influences）
 
-JavaScript之父，Brendan Eich 别无选择必须[迅速创建一门语言](http://yanhaijing.com/javascript/2013/06/22/javascript-designing-a-language-in-10-days)。（或者，更糟糕，Netscape将使用其他技术）。他借鉴了几门其他语言：
+JavaScript之父，Brendan Eich 别无选择必须[迅速创建一门语言](http://yanhaijing.com/javascript/2013/06/22/javascript-designing-a-language-in-10-days)。（否则，会更糟糕，Netscape将使用其他技术）。他借鉴了几门其他语言：
 
 - JavaScript借鉴了Java的语法和如何区分[原始值和对象](#sect_prim_vs_obj)。
-JavaScript的函数设计受Scheme和AWK的启发——他们（函数）都是第一类（first-class）对象，并且在语言中广泛使用。[闭包](#sect_closures)使他们变成强大的工具。
-- Self影响了JavaScript独一无二的面向对象编程(OOP)风格。它的[核心思想](http://www.2ality.com/2011/06/prototypes-as-classes.html)（在这里我们没有提到）非常优雅，基于此创建的语言非常少。但一个[简单的模式](#sect_constructors)（见后面）照顾大部分用例。JavaScript面向对象编程的杀手级特性是你可以直接创建对象。不需要先创建类或其他类似的东西。
+- JavaScript的函数设计受Scheme和AWK的启发——他们（的函数）都是第一类（first-class）对象，并且在语言中广泛使用。[闭包](#sect_closures)使他们（函数）变成强大的工具。
+- Self影响了JavaScript独一无二的面向对象编程(OOP)风格。它的[核心思想](http://www.2ality.com/2011/06/prototypes-as-classes.html)（在这里我们没有提到）非常优雅，基于此创建的语言非常少。但后面会提到一个[简单的模式](#sect_constructors)照顾大部分用例。JavaScript面向对象编程的杀手级特性是你可以直接创建对象。不需要先创建类或其他类似的东西。
 - Perl和Python[影响了](http://www.2ality.com/2013/02/javascript-influences.html)JavaScript字符串，数组和正则表达式的操作。
 
-JavaScript直到ECMAScript 3才加入异常处理，这解释了为什么这门语言经常自动转换类型和经常静默失败：它最初不能抛出异常。
+JavaScript直到ECMAScript 3才加入异常处理，这解释了为什么这门语言经常自动转换类型和经常静默失败：最初没有抛出异常的功能。
 
-一方面，JavaScript有很多怪癖，并且确实很多功能（块级变量作用域（block-sciped variables），模块（modules）支持子类型（subtyping）等）。另一方面，它有几个非常强大的特性，允许你弥补上面的问题。在其他语言中，你要学习语言特性。在JavaScript中，你需要经常学习模式代替。
+一方面，JavaScript有很多怪癖，并且缺失很多功能（块级变量作用域（block-sciped variables），模块（modules）支持子类型（subtyping）等）。另一方面，它有几个非常强大的特性，允许你弥补上面的问题。在其他语言中，你要学习语言特性。在JavaScript中，你需要经常学习模式代替。
 
 ###深入阅读（Further reading）
 
@@ -85,12 +86,13 @@ JavaScript直到ECMAScript 3才加入异常处理，这解释了为什么这门�
 
 ###语句和表达式（Statements versus expressions）
 
-了解JavaScript的语法，这有助于了解（简而言之），它有两个主要的语法类型：语句和表达式。
+了解JavaScript的语法，先来了解两个主要的语法类型：语句和表达式。
 
-- 语句通常“做某些事情”。程序是一组语句序列。举个例子，下面声明（创建）一个  变量 foo：
-  var foo;
+- 语句通常“做某些事情”。程序是一组语句序列。举个例子，下面声明（创建）一个变量 foo：
+  	var foo;
+
 - 表达式产生值。他们通常位于赋值操作的右边，函数参数，等。举个例子：
-  3 * 7
+  	3 * 7
 
 语句和表达式之间的区别最好通过实例说明，JavaScript（像Java）有两种不同的方式实现if-then-else。一种是用语句：
 
@@ -115,14 +117,15 @@ JavaScript直到ECMAScript 3才加入异常处理，这解释了为什么这门�
 
 	foo(bar(7, 1));
 
-`foo(...)；`是一个语句（也叫做表达式语句），`bar(7, 1)`是一个表达式。他们都实现函数调用。
+`foo(...);`是一个语句（也叫做表达式语句），`bar(7, 1)`是一个表达式。他们都实现函数调用。
 
 ###流程控制语句和语句块（Control flow statements and blocks）
 
 流程控制语句，其语句体可以是单条语句。举两个例子：
 
 	if (obj !== null) obj.foo();
-	    while (x > 0) x--;
+    
+	while (x > 0) x--;
 
 然而，任何语句总能被语句块代替，花括号包含零或多条语句。因此，你也可以这样写：
 
@@ -134,13 +137,13 @@ JavaScript直到ECMAScript 3才加入异常处理，这解释了为什么这门�
 	    x--;
 	}
 
-在本文中，我们只是用后一种方式。
+在本文中，我们只使用后一种方式。
 
 ###分号（Semicolons）
 
-分号在JavaScript中是[可选的](http://www.2ality.com/2011/05/semicolon-insertion.html)。但省略他们可能带来意想不到的结果，所以我建议你不要那样做。
+JavaScript中的分号是[可选的](http://www.2ality.com/2011/05/semicolon-insertion.html)。但省略（分号）可能会带来意想不到的结果，所以我建议你不要那样做。
 
-正如上面所看到的，分号作为语句的结尾，但语句块不需要。仅有一种情况下你将见到块后面有分号：函数表达式后面的函数体块。表达式作为语句的结尾，后面是分号：
+正如上面所看到的，分号作为语句的结尾，但语句块不需要。仅有一种情况下你能看到语句块后面有分号——函数表达式后面的函数体块。表达式作为语句的结尾，后面是分号：
 
 	var x = 3 * 7;
 	var f = function () { };
@@ -148,7 +151,7 @@ JavaScript直到ECMAScript 3才加入异常处理，这解释了为什么这门�
 
 ###注释（Comments）
 
-JavaScript有两种注释方式：单行注释和多行注释。单行注释以//开头，以换行符结尾：
+JavaScript的注释有两种形式：单行注释和多行注释。单行注释以//开头，以换行符结尾：
 
 	x++; // 单行（single-line）注释
  
@@ -168,14 +171,14 @@ JavaScript有两种注释方式：单行注释和多行注释。单行注释以/
 
 <h2 id="sect_variables_assignment">变量和赋值（Variables and assignment）</h2>
 
-JavaScript中的变量在使用之前必须先声明：
+JavaScript中的变量在使用前必须先声明，否则会报错引用错误（Reference Error）：
 
 	var foo;  // 声明变量“foo”
  
 
 ###赋值（Assignment）
 
-你可以在生命变量的同时给它赋值：
+你可以在声明变量的同时为其赋值：
 
 	var foo = 6;
 
@@ -196,12 +199,14 @@ JavaScript中的变量在使用之前必须先声明：
 
 标识符就是事物的名字，在JavaScript中他们扮演不同的语法角色。例如，变量的名称是一个标识符。
 
-大体上，标识符的第一个字符可以是任何Unicode字符，美元标志符（$）或下划线（_）。后面的字符可以是任意字符和数字。因此，下面全是合法的标识符：
+大体上，标识符的第一个字符可以是任何Unicode字符、美元标志符（$）或下划线（_）。后面可以是任意字符和数字。因此，下面全是合法的标识符：
 
 	arg0
 	_tmp
 	$elem
 	π
+
+**注意：**首字符不能是数字，如果是数字的话，该如何区分是数字还是变量呢？
 
 一些标识符是“保留关键字”——他们是语法的一部分，不能用作变量名：
 
@@ -220,7 +225,7 @@ JavaScript中的变量在使用之前必须先声明：
 
 <h2 id="sect_values">值（Values）</h2>
 
-JavaScript有所有我们期待的编程语言值类型：布尔，数字，字符串，数组等。JavaScript中的所有值都有属性。每个属性有一个键（或名字）和一个值。考虑记录的域（fields of record）。你可以使用点（.）操作符读取属性：
+JavaScript有所有我们期待的编程语言值类型：布尔，数字，字符串，数组等。JavaScript中的所有值都有属性。每个属性有一个键（或名字）和一个值。参考记录的域（fields of record）。你可以使用点（.）操作符读取属性：
 
 	value.propKey
 
@@ -255,7 +260,7 @@ JavaScript有所有我们期待的编程语言值类型：布尔，数字，字�
 JavaScript定义了不同值之间的区别：
 
 - 原始值包括：boolean，number，string，null和undefined，
-- 所有其他的值都是对象。实际上对象被定义为——所有不为原始类型的值。
+- 所有其他的值都是对象。实际上对象被定义为——所有不为原始值的值。
 
 两者之间的主要区别在于他们是如何被比较的：每一个对象有一个独一无二的标志，并且仅和自己相等：
 
@@ -273,11 +278,11 @@ JavaScript定义了不同值之间的区别：
 	> prim1 === prim2
 	  true
 
-接下来的两节介绍原始值和对象的更多细节。
+接下来的两节会介绍原始值和对象的更多细节。
 
 ###原始类型值（Primitive values）
 
-下面的全是原始类型值（简称：原始值）：
+下面全是原始类型值（简称：原始值）：
 
 - [布尔类型](#sect_booleans)：true，false
 - [数字类型](#sect_numbers)：1736，1.351
@@ -293,7 +298,6 @@ JavaScript定义了不同值之间的区别：
 		  true
 		> 'abc' === 'abc'
 		  true
-
 
 - **无法更改：**值的属性无法更改，无法添加和移除属性。
 
@@ -312,26 +316,20 @@ JavaScript定义了不同值之间的区别：
 
 - [简单对象](#sect_objects)（类型是Object）能通过对象字面量创建：
 
-
 	{
 	    firstName: 'Jane',
 	    lastName: 'Doe'
 	}
 
-
-  上面的对象有两个属性：firstName属性的值是“Jane”，lastName属性的值是“Doe”。
+  上面的对象有两个属性：`firstName`属性的值是“Jane”，`lastName`属性的值是“Doe”。
 - [数组](#sect_arrays)（类型是 Array）能通过数组字面量创建：
 
-
 	[ 'apple', 'banana', 'cherry' ]
-
 
   上面的数组有三个元素，可以通过数字索引访问。例如“apple”的索引是0.
 - [正则表达式对象](#sect_regexp)（类型是 RegExp）能通过正则表达式字面量创建。
 
-
 	/^a+b+$/
- 
 
 对象的特征：
 
@@ -356,26 +354,25 @@ JavaScript定义了不同值之间的区别：
 
 -** 用户可扩展（user-extensible）：**你可以通过[构造函数](#sect_constructors)定义新的对象类型。
 
-
-[数组](#sect_arrays)所有的数据结构（如）都是对象，但并不是所有的对象都是数据结构。例如：[正则表达式是对象](#sect_regexp)，但不是一个数据结构。
+所有的数据结构（如[数组](#sect_arrays)）都是对象，但并不是所有的对象都是数据结构。例如：[正则表达式是对象](#sect_regexp)，但不是数据结构。
 
 <h3 id="sect-non-values">undefined 和 null（undefined and null）</h3>
 
 多少有些不必要，JavaScript有两个“无值（non-values）”：undefined 和 null。
 
-- undefined的意思是“没有值（no value）”。为初始化的变量是undefined：
+- undefined的意思是“没有值（no value）”。未初始化的变量是undefined：
 
 		> var foo;
 		> foo
 		undefined
 
-  如果你读取不存在的属性，将返回undefined：
+  读取不存在的属性时，将返回undefined：
 
 		> var obj = {}; // 空对象
 		> obj.foo
 		  undefined
 
-  未传递的参数也是undefined：
+  缺省的参数也是undefined：
 
 		> function f(x) { return x }
 		> f()
@@ -401,20 +398,20 @@ JavaScript定义了不同值之间的区别：
 
 ###包装类型（Wrapper types）
 
-对象类型的实例Foo（包括内建类型，例如Array和其他自定义类型）从对象Foo.prototype上获取方法。你可以通过读这个方法但不调用它的方式验证这点：
+对象类型的实例Foo（包括内建类型，例如Array和其他自定义类型）从对象Foo.prototype上获取方法。你可以通过读取这个方法的方式（不是调用）验证这点：
 
 	> [].push === Array.prototype.push
 	  true
 
 相反，原始类型是没有类型的，所以每个原始类型有一个关联类型，称之为包装类型：
-
+>>>>>>>>修订
 - 布尔值的包装类型是 Boolean。布尔值从Boolean.prototype上获取方法：
 
 		> true.toString === Boolean.prototype.toString
 	  	true
  
 
-  注意包装类型的名字首个字母是大写的B。如果在JavaScript中布尔值的类型可以访问，那么它可能会被成为布尔对象。
+  注意包装类型名字的首字母是大写的B。如果在JavaScript中布尔值的类型可以访问，那么它可能会被转换为布尔对象。
 - 数字值的包装类型是Number。
 - 字符串值的包装类型是String。
 
@@ -428,13 +425,13 @@ JavaScript定义了不同值之间的区别：
 
 ###通过typeof 和 instanceof 将值分类（Categorizing values via typeof and instanceof）
 
-有两个操作符可以用来将值分类：typeof 主要用来操作原始值，instanceof 主要用来造作对象。
+有两个操作符可以用来将值分类：typeof 主要用于原始值，instanceof 主要用于对象。
 
 **typeof** 使用方法如下：
 
 	typeof «value»
 
-它返回描述 value “类型”的一个字符串。例如：
+`typeof`返回描述 value “类型”的一个字符串。例如：
 
 	> typeof true
 	  'boolean'
@@ -445,7 +442,7 @@ JavaScript定义了不同值之间的区别：
 	> typeof [] // 空数组字面量
 	  'object'
 
-下标列出了所有typeof的结果：
+下面列出了typeof操作的所有结果：
  
 <table class="table">
 <tbody>
@@ -484,7 +481,7 @@ JavaScript定义了不同值之间的区别：
 </tbody>
 </table>
 
-有两个东西和我们所说的原始值和对象是矛盾的：
+有两个结果和我们上面说的的原始值与对象是矛盾的：
 
 - 函数的类型是“function”而不是“object”。鉴于函数（类型为“function”）是对象（类型是对象）的子类型，这不是一个错误。
 - null的类型是“object”。这是一个bug，但从没被修复，因为修复后会破坏现有的代码。
@@ -494,7 +491,7 @@ JavaScript定义了不同值之间的区别：
 
 	«value» instanceof «Constr»
 
-如果 value 是一个对象，并且value 是由构造函数Constr创建的（考虑：类）。例如：
+如果 value 是一个对象，并且value 是由构造函数Constr创建的（参考：类）。例如：
 
 	> var b = new Bar();  // 通过构造函数Bar创建对象
 	> b instanceof Bar
@@ -532,7 +529,7 @@ JavaScript定义了不同值之间的区别：
 - 数字: -0, NaN
 - 字符串: ''
 
-所有其他值被认为true。被理解为false的值成为假值（falsy），被理解为true的值成为真值（truthy）。可以使用Boolean作为函数测试值被理解为什么。
+所有其他值被认为true。被理解为false的值称为假值（falsy），被理解为true的值称为真值（truthy）。可以使用Boolean作为函数，测试值被理解为什么。
 
 	> Boolean(undefined)
 	  false
@@ -543,12 +540,12 @@ JavaScript定义了不同值之间的区别：
 
 ###二元逻辑运算符（Binary logical operators）
 
-JavaScript中的二元逻辑运算符是短路运算——如果第一个操作数可以确定结果，第二个操作数将不被验证。例如，在下面的代码中，函数foo()不会被调用。
+JavaScript中的二元逻辑运算符是短路运算——如果第一个操作数可以确定结果，第二个操作数将不被验证（运算）。例如，在下面的代码中，函数foo()永远不会被调用。
 
 	false && foo()
 	true  || foo()
 
-此外，二元逻辑运算符返回操作数中的一个——可能是一个布尔值，也可能不是。一张真值表用来决定返回哪个值：
+此外，二元逻辑运算符会返回操作数中的一个——可能是一个布尔值，也可能不是。一张真值表用来决定返回哪个值：
 
 - 与：如果第一个操作数是假值，返回第一个。否则返回第二个操作数。
 
@@ -597,7 +594,7 @@ JavaScript中的所有数字都是浮点型（虽然大部分的JavaScript引擎
 		  Infinity
 
   Infinity 有时很有用，因为它比任何其他数字都大。同样，-Infinity 比其他任何数字都小。
-- JavaScript有[两个零](http://www.2ality.com/2012/03/signedzero.html)，+0 和 -0。它通常不让你看到，并简单将两个零都显示为0：
+- JavaScript有[两个零](http://www.2ality.com/2012/03/signedzero.html)，+0 和 -0。它（js引擎）通常不让你看到，并简单将两个零都显示为0：
 
 		> +0
 		  0
@@ -615,11 +612,11 @@ JavaScript中有下列[算数运算符](https://developer.mozilla.org/en-US/docs
 - 减: number1 - number2
 - 乘: number1 * number2
 - 除: number1 / number2
-- 求模: number1 % number2
+- 模: number1 % number2
 - 自增: ++variable, variable++
 - 自减: --variable, variable--
 - 负值: -value
-- 转换为数字: +value
+- 正值（转换为数字）: +value
 
 
 全局对象[Math](#sect_math)通过函数提供更多算数运算操作。
@@ -663,7 +660,7 @@ length属性是字符串的字符数量。
 	> 'abc'.length
 	  3
 
-**提醒：**字符串是不可变的，如果你想改变现有字符串，你需要创建一个行的字符串。
+**提醒：**字符串是不可变的，如果你想改变现有字符串，你需要创建一个新的字符串。
 
 ###字符串运算符（String operators）
 
@@ -789,7 +786,7 @@ for 循环的格式如下：
         return param1 + param2;
     }
 
-上面的代码定义一个名称叫做add的函数，有两个参数param1和param2，并且返回参数的和。下面是你如何调用这个函数：
+上面的代码定义一个名称叫做add的函数，有两个参数param1和param2，并且返回参数的和。下面是如何调用这个函数：
 
     > add(6, 1)
       7
@@ -828,7 +825,7 @@ for 循环的格式如下：
 
 ###特殊变量arguments（The special variable arguments）
 
-在JavaScript中你可以调用任意函数并传递任意数量的参数——语言绝不会抱怨。那可以工作，然而，使所有参数可访问需要通过特殊变量 arguments。arguments 看起来像数组，但它没有数组的方法。
+在JavaScript中你可以调用任意函数并传递任意数量的参数——语言绝不会抱怨（参数检测）。都可以正常工作，然而，使所有参数可访问需要通过特殊变量 arguments。arguments 看起来像数组，但它没有数组的方法（称为类数组 array-like）。
 
     > function f() { return arguments }
     > var args = f('a', 'b', 'c');
@@ -852,7 +849,7 @@ for 循环的格式如下：
     a b
     [ 'a', 'b', 'c' ]
 
-缺少的参数将是undefined：
+缺少的参数将会是undefined：
 
     > f('a')
     a undefined
@@ -926,7 +923,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
 
 <h2 id="sect_strict_mode">严格模式（Strict mode）</h2>
 
-[严格模式](http://www.2ality.com/2011/01/javascripts-strict-mode-summary.html)开启检测和一些其他措施，是JavaScript变成更整洁的语言。推荐使用严格模式。为了开启严格模式，只需在JavaScript文件或script标签第一行添加如下语句：
+[严格模式](http://www.2ality.com/2011/01/javascripts-strict-mode-summary.html)开启检测和一些其他措施，使JavaScript变成更整洁的语言。推荐使用严格模式。为了开启严格模式，只需在JavaScript文件或script标签第一行添加如下语句：
 
 	'use strict';
 
@@ -998,7 +995,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
 
 <h2 id="sect_var_scope_closures">变量作用域和闭包（Variable scoping and closures）</h2>
 
-在JavaScript中，你必须通过var声明变量，在你使用它们之前：
+在JavaScript中，你必须使用变量之前，通过var声明变量：
 
     > var x;
     > x = 3;
@@ -1030,7 +1027,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
         console.log(tmp);  // 3
     }
 
-我们可以看到tmp变量不仅在（\*）所在行的语句块，它在整个函数内都存在。
+我们可以看到tmp变量不仅在（\*）所在行的语句块存在，它在整个函数内都存在。
 
 ###变量提升（Variables are hoisted）
 
@@ -1087,7 +1084,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
 
 ###闭包实现变量共享（Inadvertent sharing via closures）
 
-下面是个经典问题，如果你不知道它那它会让你费尽思量。因此，先浏览下，先对问题有个大概的了解。
+下面是个经典问题，如果你不知道，会让你费尽思量。因此，先浏览下，对问题有个大概的了解。
 
 闭包保持和外部变量的连接，有时可能和你想像的行为不一致：
 
@@ -1117,7 +1114,7 @@ try分支包裹易出错的代码，如果try分支内部抛出异常，catch分
 
 <h2 id="sect_objects">对象和继承（Objects and inheritance）</h2>
 
-和所有的[值类型](#sect_values)一样，对象有属性。事实上，你可以将对象当作一组属性的集合，每个属性是一对（键和值）。键是字符串，值可以是任意JavaScript值。到目前为止，我们仅仅见过键是[标识符](#identifiers)的属性，因为点操作符处理的键必须为标识符。在这节，你讲见到另一种方法属性的方法，能将任意字符串作为键。
+和所有的[值类型](#sect_values)一样，对象有属性。事实上，你可以将对象当作一组属性的集合，每个属性都是一对（键和值）。键是字符串，值可以是任意JavaScript值。到目前为止，我们仅仅见过键是[标识符](#identifiers)的属性，因为点操作符处理的键必须为标识符。在这节，你讲见到另一种访问属性的方法，能将任意字符串作为键。
 
 ###单个对象（Single objects）
 
@@ -1154,7 +1151,7 @@ in 操作符用来检测一个属性是否存在：
     > 'foo' in jane
     false
 
-你若你读取一个不存在的属性，你将得到undefined值。因此上面的两个检查也可以像下面这样：
+若读取一个不存在的属性，将会得到undefined值。因此上面的两个检查也可以像下面这样：
 
     > jane.newProperty !== undefined
     true
@@ -1245,9 +1242,9 @@ delete操作符用来删除一个属性：
 
 <h3 id="sect_constructors">构造函数：对象工厂（Constructors: factories for objects）</h3>
 
-目前为止，你可能认为JavaScript的对象仅是键值的映射，通过JavaScript对象字面量可以得出这个观点，看起来很像其他语言中的地图/字典（map/dictionary）。然而，JavaScript对象也支持真正意义上的面向对象特性：继承（inheritance）。本节会完全讲解JavaScript中继承的工作原理，但会给你以此为开始的简单模式。如果你想得到更多知识，请查阅这篇文章“[JavaScript inheritance by example](http://www.2ality.com/2012/01/js-inheritance-by-example.html)”。
+目前为止，你可能认为JavaScript的对象仅是键值的映射，通过JavaScript对象字面量可以得出这个观点，看起来很像其他语言中的地图/字典（map/dictionary）。然而，JavaScript对象也支持真正意义上的面向对象特性：继承（inheritance）。本节不会完全讲解JavaScript中继承的工作原理，但会给你以此为开始的简单模式。如果你想得到更多知识，请查阅这篇文章“[JavaScript inheritance by example](http://www.2ality.com/2012/01/js-inheritance-by-example.html)”。
 
-除了作为“真正”的函数和方法，函数还在JavaScript中扮演第三种角色：如果通过new操作符调用，他们会变为构造函数，对象的工厂。构造函数是对其他语言中的类的粗略模拟。约定俗称，构造函数的第一个字母大写。例如：
+除了作为“真正”的函数和方法，函数还在JavaScript中扮演第三种角色：如果通过new操作符调用，他们会变为构造函数，对象的工厂。构造函数是对其他语言中的类的粗略模拟。约定俗成，构造函数的第一个字母大写。例如：
 
     // 设置实例数据
     function Point(x, y) {
@@ -1475,12 +1472,12 @@ JavaScript标准库相对简单，但有很多其他东西你可以使用：
 
 <h2 id="sect_comment">欢迎反馈</h2>
 
-我尝试找到JavaScript的一个最理想子集。我成功了吗？需要增删一些东西吗？如果你是一个JavaScript新手，我特别想听听你的意见：当读这篇文章的时候是非常容易理解吗？或是你在某些地方卡住？
+我尝试找到JavaScript的一个最理想子集。我成功了吗？需要增删一些东西吗？如果你是一个JavaScript新手，我特别想听听你的意见：这篇文章是非常容易理解吗？或是你在某些地方卡住？
 
 ### 一起交流吧
 
 - GitHub家园 225932282，Git/GitHub爱好者的天堂，欢迎有兴趣的同学加入 <a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="github 家园" title="github 家园"></a>
-- 码农之家 203145707，码农们的天堂，欢迎有兴趣的同学加入 <a target="_blank" href="http://url.cn/RyKWB0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="码农之家" title="码农之家"></a>
+
 - CSS家园 188275051，Web开发者（前后端）的天堂，欢迎有兴趣的同学加入<a target="_blank" href="http://url.cn/OXkoEC"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 <h2 id="sect_other">其他</h2>

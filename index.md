@@ -404,7 +404,7 @@ JavaScript定义了不同值之间的区别：
 	  true
 
 相反，原始类型是没有类型的，所以每个原始类型有一个关联类型，称之为包装类型：
->>>>>>>>修订
+
 - 布尔值的包装类型是 Boolean。布尔值从Boolean.prototype上获取方法：
 
 		> true.toString === Boolean.prototype.toString

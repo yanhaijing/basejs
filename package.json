@@ -1,6 +1,7 @@
 {
   "name": "basejs",
-  "version": "0.2.0",
+  "description": "这是我所知道的最完整最简洁的JavaScript基础教程。这篇文章带你尽快走进JavaScript的世界——前提是你有一些编程经验的话。本文试图描述这门语言的最小子集。我给这个子集起名叫做“JavaScript简易教程",
+  "version": "0.3.0",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-manifest": "~0.4.0"

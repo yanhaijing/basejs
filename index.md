@@ -1,7 +1,7 @@
 ---
 layout: default
 title: JavaScript简易教程
-version: 0.2.0
+version: 0.3.0
 ---
 
 <iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=13&l=ez&f=ifr&f=ifr" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" border="0" frameborder="0" style="border:none;"></iframe>

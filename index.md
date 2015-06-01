@@ -4,7 +4,10 @@ title: JavaScript简易教程
 version: 0.3.0
 ---
 
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=13&l=ez&f=ifr&f=ifr" width="468" height="60" scrolling="no" marginwidth="0" marginheight="0" border="0" frameborder="0" style="border:none;"></iframe>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00VDSW6X2&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B007OQQVMY&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B0097CON2S&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00W34DZ8K&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
 这是我所知道最完整最简洁的JavaScript基础教程。
 

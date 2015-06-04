@@ -4,11 +4,6 @@ title: JavaScript简易教程
 version: 0.3.0
 ---
 
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00VDSW6X2&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B007OQQVMY&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B0097CON2S&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00W34DZ8K&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-
 这是我所知道最完整最简洁的JavaScript基础教程。
 
 本文将带你尽快走进JavaScript的世界——前提是你有一些编程经验的话。本文试图描述这门语言的最小子集。我给这个子集起名叫做“JavaScript简易教程”，并推荐那些准备深入阅读细节和高级技巧之前的新手阅读。合抱之木生于毫末，九层之台起于垒土，欲速则不达。本文的最后会提出如何进一步学习。
@@ -1472,6 +1467,12 @@ JavaScript标准库相对简单，但有很多其他东西你可以使用：
 - [http://yanhaijing.com/es5 ](http://yanhaijing.com/es5)如果你想成为高手，我建议阅读ecmascript 规范
 - [给javascript初学者的24条最佳实践](http://yanhaijing.com/javascript/2013/12/11/24-JavaScript-best-practices-for-beginners)
 - [我希望我知道的七个JavaScript技巧](http://yanhaijing.com/javascript/2014/04/23/seven-javascript-quirks-i-wish-id-known-about)
+
+<h2 id="sect_book">推荐阅读</h2>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00VDSW6X2&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B007OQQVMY&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B0097CON2S&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00W34DZ8K&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
 <h2 id="sect_comment">欢迎反馈</h2>
 

@@ -36,8 +36,12 @@ h3[id] {
 .donate{
 	margin-bottom:20px;
 }
-.donate figcaption{
-	text-indent: 45px;
+.donate figure {
+    float: left;
+    margin-right: 10px;
+}
+.donate figcaption {
+    text-align: center;
 }
 footer{
 	text-align: center;

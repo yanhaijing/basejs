@@ -1469,10 +1469,10 @@ JavaScript标准库相对简单，但有很多其他东西你可以使用：
 - [我希望我知道的七个JavaScript技巧](http://yanhaijing.com/javascript/2014/04/23/seven-javascript-quirks-i-wish-id-known-about)
 
 <h2 id="sect_book">推荐阅读</h2>
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00VDSW6X2&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B007OQQVMY&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B0097CON2S&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-<iframe src="http://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00W34DZ8K&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="https://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00VDSW6X2&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="https://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B007OQQVMY&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="https://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B0097CON2S&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+<iframe src="https://rcm-cn.amazon-adsystem.com/e/cm?t=yanhaijing-23&o=28&p=8&l=as1&asins=B00W34DZ8K&ref=qf_sp_asin_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 
 <h2 id="sect_comment">欢迎反馈</h2>
 
@@ -1480,9 +1480,9 @@ JavaScript标准库相对简单，但有很多其他东西你可以使用：
 
 ### 一起交流吧
 
-- GitHub家园 225932282，Git/GitHub爱好者的天堂，欢迎有兴趣的同学加入 <a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="github 家园" title="github 家园"></a>
+- GitHub家园 225932282，Git/GitHub爱好者的天堂，欢迎有兴趣的同学加入 <a target="_blank" href="http://url.cn/OZZ7bw"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="github 家园" title="github 家园"></a>
 
-- CSS家园 188275051，Web开发者（前后端）的天堂，欢迎有兴趣的同学加入<a target="_blank" href="http://url.cn/OXkoEC"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
+- CSS家园 188275051，Web开发者（前后端）的天堂，欢迎有兴趣的同学加入<a target="_blank" href="http://url.cn/OXkoEC"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="CSS家园" title="CSS家园"></a>
 
 <h2 id="sect_other">其他</h2>
 

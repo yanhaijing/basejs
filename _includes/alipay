@@ -1,11 +1,11 @@
 <aside class="donate clearfix">
     <h2>捐赠</h2>
     <figure>
-        <img src="http://yanhaijing.com/img/alipay.jpg" alt="支付宝帐号：yanhaijing@yeah.net" width="256" height="256">
+        <img src="//yanhaijing.com/img/alipay.jpg" alt="支付宝帐号：yanhaijing@yeah.net" width="256" height="256">
         <figcaption>支付宝帐号：yanhaijing@yeah.net</figcaption>
     </figure>
     <figure>
-        <img src="http://yanhaijing.com/img/weixin.png" alt="微信支付二维码" width="256" height="256">
+        <img src="//yanhaijing.com/img/weixin-donate.jpg" alt="微信支付二维码" width="256" height="256">
         <figcaption>微信扫一扫转账</figcaption>
     </figure>
 </aside>
